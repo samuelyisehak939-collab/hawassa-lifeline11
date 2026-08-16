@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawassa LifeLine - Emergency Blood Network</title>
+    <link rel="stylesheet" href="./Emergency Blood Donor.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="drop-icon">🩸</span>
+            <span class="logo-text">Hawassa<strong>LifeLine</strong></span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#requests">Emergency Requests</a></li>
+                <li><a href="#register">Register as Donor</a></li>
+                <li><a href="#about">Hawassa Hospitals</a></li>
+            </ul>
+        </nav>
+        <a href="#register" class="btn-nav">Become a Donor</a>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tagline"> Hawassa Emergency Response Network</span>
+            <h1>Every Drop Counts. Save a Life in Hawassa Today.</h1>
+            <p>Connecting emergency patients at Hawassa Referral Hospital and local clinics with voluntary blood donors in real-time.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <h3>480+</h3>
+                    <p>Registered Donors</p>
+                </div>
+                <div class="stat-box">
+                    <h3>12</h3>
+                    <p>Urgent Requests Today</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Free Community Service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ACTIVE EMERGENCY REQUESTS SECTION -->
+    <section id="requests" class="requests-section">
+        <div class="section-title">
+            <h2>🚨 Active Emergency Requests in Hawassa</h2>
+            <p>If you match any of these blood types, please contact the family immediately.</p>
+        </div>
+
+        <div class="requests-grid">
+
+            <!-- Card 1: Urgent O- Request -->
+            <div class="card emergency-card">
+                <span class="badge urgent">CRITICAL</span>
+                <div class="blood-type-circle">O-</div>
+                <h3>Patient: Abebech Tadesse</h3>
+                <p><strong>Hospital:</strong> Hawassa Referral Hospital</p>
+                <p><strong>Location:</strong> Tabor Sub-city, Hawassa</p>
+                <p><strong>Needed:</strong> 2 Units | Surgery</p>
+                <a href="tel:+251911000000" class="btn-call">📞 Call Family (+251 911...)</a>
+            </div>
+
+            <!-- Card 2: A+ Request -->
+            <div class="card">
+                <span class="badge warning">NEEDED TODAY</span>
+                <div class="blood-type-circle">A+</div>
+                <h3>Patient: Yonas Kebede</h3>
+                <p><strong>Hospital:</strong> Yanet Internal Medicine</p>
+                <p><strong>Location:</strong> Menagesha, Hawassa</p>
+                <p><strong>Needed:</strong> 1 Unit | Anemia</p>
+                <a href="tel:+251922000000" class="btn-call">📞 Call Family (+251 922...)</a>
+            </div>
+
+            <!-- Card 3: B+ Request -->
+            <div class="card">
+                <span class="badge info">STABLE</span>
+                <div class="blood-type-circle">B+</div>
+                <h3>Patient: Chaltu Gemechu</h3>
+                <p><strong>Hospital:</strong> Adare General Hospital</p>
+                <p><strong>Location:</strong> Misrak Sub-city, Hawassa</p>
+                <p><strong>Needed:</strong> 3 Units | Childbirth</p>
+                <a href="tel:+251933000000" class="btn-call">📞 Call Family (+251 933...)</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. DONOR REGISTRATION FORM -->
+    <section id="register" class="register-section">
+        <div class="form-container">
+            <h2>🩸 Join the Hawassa Voluntary Donor Registry</h2>
+            <p>Fill in your details so hospital coordinators can reach you when your blood group is needed.</p>
+
+            <form class="donor-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name (ሙሉ ስም):</label>
+                    <input type="text" id="fullname" placeholder="e.g., Samuel Bekele" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number (ስልክ ቁጥር):</label>
+                        <input type="tel" id="phone" placeholder="0911......" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bloodgroup">Blood Group (የደም ዓይነት):</label>
+                        <select id="bloodgroup" required>
+                            <option value="">Select Blood Group...</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O- (Universal Donor)</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subcity">Your Area in Hawassa (ሰፈር / ክፍለ ከተማ):</label>
+                    <select id="subcity" required>
+                        <option value="">Select Sub-city...</option>
+                        <option value="tabor">Tabor (ታቦር)</option>
+                        <option value="menagesha">Menagesha (መናገሻ)</option>
+                        <option value="misrak">Misrak (ምስራቅ)</option>
+                        <option value="hayekdar">Hayek Dar (ሀይቅ ዳር)</option>
+                        <option value="bahir-dar">Hawassa University Main Campus</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Register as Hero Donor</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer>
+        <p><strong>Hawassa LifeLine</strong> — Built by Sami (Computer Science Student @ Hawassa University)</p>
+        <p>Emergency Ambulance Line: <strong>907</strong> | Referral Hospital Hub: <strong>+251 46 220 0000</strong></p>
+    </footer>
+
+</body>
+</html>
